@@ -247,8 +247,7 @@ export interface MediaMediaVideo extends Struct.ComponentSchema {
     placeholder: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    video: Schema.Attribute.Media<'files' | 'videos'> &
-      Schema.Attribute.Required;
+    video: Schema.Attribute.Media<'files' | 'videos'>;
   };
 }
 
