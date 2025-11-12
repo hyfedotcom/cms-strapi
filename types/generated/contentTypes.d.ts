@@ -488,7 +488,6 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'global.section-testimonial',
         'global.section-links',
         'global.section-cta',
-        'global.section-rich-text',
         'global.section-gallery',
         'global.section-rich-text-block',
       ]

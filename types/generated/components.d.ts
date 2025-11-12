@@ -123,16 +123,6 @@ export interface GlobalSectionProps extends Struct.ComponentSchema {
   };
 }
 
-export interface GlobalSectionRichText extends Struct.ComponentSchema {
-  collectionName: 'components_global_section_rich_texts';
-  info: {
-    displayName: 'section.rich-text';
-  };
-  attributes: {
-    content: Schema.Attribute.Blocks & Schema.Attribute.DefaultTo<[]>;
-  };
-}
-
 export interface GlobalSectionRichTextBlock extends Struct.ComponentSchema {
   collectionName: 'components_global_section_rich_text_blocks';
   info: {
@@ -376,7 +366,6 @@ declare module '@strapi/strapi' {
       'global.section-links': GlobalSectionLinks;
       'global.section-partners': GlobalSectionPartners;
       'global.section-props': GlobalSectionProps;
-      'global.section-rich-text': GlobalSectionRichText;
       'global.section-rich-text-block': GlobalSectionRichTextBlock;
       'global.section-testimonial': GlobalSectionTestimonial;
       'layout.layout-footer': LayoutLayoutFooter;
